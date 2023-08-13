@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-""" Class BaseModel """
+"""  BaseModels """
 from datetime import datetime
 from uuid import uuid4
 import models
 
 
 class BaseModel:
-    """ construct """
+    """ constructs """
 
     def __init__(self, *args, **kwargs):
-        """ Construct """
+        """ Constructs """
         if kwargs:
             for key, value in kwargs.items():
                 if key == '__class__':
@@ -37,12 +37,12 @@ class BaseModel:
                ') ' + str(self.__dict__))
 
     def save(self):
-        """ save function """
+        """ save functions """
         self.updated_at = datetime.now()
         models.storage.save()
 
     def to_dict(self):
-        """ Return a dictonary """
+        """ Return dictonaries """
         aux_dict = self.__dict__.copy()
         aux_dict['__class__'] = self.__class__.__name__
         aux_dict['created_at'] = self.created_at.isoformat()

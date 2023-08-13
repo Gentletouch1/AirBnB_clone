@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Check Filestorage class """
+""" Filestorage checks """
 import unittest
 from os import path
 from models import storage
@@ -14,10 +14,8 @@ from models.engine.file_storage import FileStorage
 
 
 class test_storage(unittest.TestCase):
-    """ check the class """
 
     def setUp(self):
-        """ check empty """
         try:
             remove('file.json')
         except Exception:

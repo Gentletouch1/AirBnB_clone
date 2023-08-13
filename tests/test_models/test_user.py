@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" testing User """
+""" User """
 import unittest
 import pep8
 from models.user import User
 
 class User_testing(unittest.TestCase):
-    """ check BaseModel """
+    """BaseModel_checks """
 
     def testpep8(self):
-        """ testing codestyle """
+        """ codestyle_test """
         pepstylecode = pep8.StyleGuide(quiet=True)
         path_user = 'models/user.py'
         result = pepstylecode.check_files([path_user])
