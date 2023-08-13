@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" class FileStorage
+    serializes instances to a JSON file
+    and deserializes JSON file to instances """
 import json
 import uuid
 import os
@@ -40,4 +43,3 @@ class FileStorage:
                 for key, val in l_json.items():
                     FileStorage.__objects[key] = eval(
                         val['__class__'])(**val)
-

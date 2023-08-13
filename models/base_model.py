@@ -48,4 +48,3 @@ class BaseModel:
         aux_dict['created_at'] = self.created_at.isoformat()
         aux_dict['updated_at'] = self.updated_at.isoformat()
         return aux_dict
-
