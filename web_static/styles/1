@@ -5,13 +5,7 @@
 /* Body style */
 body {
   color: #484848;
-  font: 14px Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* Block horizontal scrolling */
-html, body {
-  width: 100%;
-  overflow-x: hidden;
+  font: 14px Circular, "Helvetica Neue", Helvetica, Aerial, sans-serif;
 }
 
 /* Container style */
